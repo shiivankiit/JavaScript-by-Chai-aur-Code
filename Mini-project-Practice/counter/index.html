@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Counter: <span id="counter">0</span>
+    </div>
+    <button id="upBtn">Upp</button>
+    <button id="downBtn">Down</button>
+
+    <script>
+        let count = 0;
+        const counterSpan = document.getElementById('counter');
+        document.getElementById('upBtn').onclick = function() {
+            count++;
+            counterSpan.textContent = count;
+        };
+        document.getElementById('downBtn').onclick = function() {
+            count--;
+            counterSpan.textContent = count;
+        };
+    </script>
+</body>
