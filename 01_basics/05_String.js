@@ -12,7 +12,7 @@ console.log(gameName.length);
 console.log(gameName.toUpperCase());
 console.log(gameName.charAt(3));
 
-const newString=gameName.substring(0,4)
+const newString=gameName.substring(0,4);
 console.log(newString);
 
 
