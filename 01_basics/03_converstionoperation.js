@@ -1,41 +1,41 @@
-// let score="33";
-// console.log(typeof score);
-// console.log(typeof (score));
+let score="33";
+console.log(typeof score);
+console.log(typeof (score));
 
-// let valueInnumber = Number(score);
-// console.log(typeof valueInnumber);
-// console.log(valueInnumber);
-
-
-// let score1="33abc";
-// console.log(typeof score1);
-// console.log(typeof (score1));
-
-// let valueInnumber1 = Number(score1);
-// console.log(typeof valueInnumber1);
-// console.log(valueInnumber1);
+let valueInnumber = Number(score);
+console.log(typeof valueInnumber);
+console.log(valueInnumber);
 
 
-// let value1= true;
-// console.log(typeof value1);
-// let cnvrtvalue=Number(value1);
-// console.log(typeof cnvrtvalue);
-// console.log(cnvrtvalue);
+let score1="33abc";
+console.log(typeof score1);
+console.log(typeof (score1));
 
-// //"33"=>33
-// //"33abc"=>Nan
-// // true=1,false=0;
+let valueInnumber1 = Number(score1);
+console.log(typeof valueInnumber1);
+console.log(valueInnumber1);
 
-// let isLoggedIn=1;
-// let boolisloggedIn=Boolean(isLoggedIn);
-// console.log(boolisloggedIn);
 
-// //1=>true 0=>false.
+let value1= true;
+console.log(typeof value1);
+let cnvrtvalue=Number(value1);
+console.log(typeof cnvrtvalue);
+console.log(cnvrtvalue);
 
-// let someNo= 33;
-// let stringNumber= String(someNo);
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+//"33"=>33
+//"33abc"=>Nan
+// true=1,false=0;
+
+let isLoggedIn=1;
+let boolisloggedIn=Boolean(isLoggedIn);
+console.log(boolisloggedIn);
+
+//1=>true 0=>false.
+
+let someNo= 33;
+let stringNumber= String(someNo);
+console.log(stringNumber);
+console.log(typeof stringNumber);
 
 
 //************************Operations*************************//
