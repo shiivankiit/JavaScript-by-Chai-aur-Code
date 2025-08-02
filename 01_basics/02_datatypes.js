@@ -4,7 +4,7 @@
 //string=>" "
 //boolean=>true/false.
 //nulll=>standalonevalue
-//unsefined
+//undefined
 //symbol used in react a lot. = it is unique
 //object.
 let age=20;
