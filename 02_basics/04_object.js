@@ -1,5 +1,6 @@
 const tinderUser=new Object()//this is a singelton obj
 console.log(tinderUser);
+
 const tinderUser1={};//non-singelton object.
 console.log(tinderUser1);
 
@@ -28,7 +29,7 @@ const obj4={5:"a",6:"b"}
 
 const obj3 = Object.assign({},obj1,obj2,obj4)//Object.assign(target,source)
 console.log(obj3);
-//It can also done using spraed operator
+//It can also done using spread operator.
 const obj5 = {...obj1,...obj2,...obj4}
 console.log(obj5);
 
