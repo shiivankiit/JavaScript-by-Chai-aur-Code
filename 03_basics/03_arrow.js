@@ -4,8 +4,7 @@ const user={
 
       welocmeMessage : function(){
      //   console.log(`${this.username},welcome to the website`);//this refer to current context.
-     //   console.log(this);
-        
+     //   console.log(this); 
       }
 }
 //context refer to the value.
@@ -21,6 +20,7 @@ user.welocmeMessage()
 //     console.log(this);
 // }
 
+//It is called function expression.
 // const chai= function(){
 //     let username="hitesh"
 //     console.log(this.username);
@@ -34,7 +34,7 @@ user.welocmeMessage()
 
 //const addTwo=(num1,num2)=> num1+num2
 //implict  does not contain return keyword called implicit return.
-const addTwo=(num1,num2)=>({username:"hitesh"})
+const addTwo=(num1,num2)=>({username:"hitesh"}) //when you put parantheses a block is created and we work on them.
 console.log(addTwo(2,3));
 
 //to return object we need to wrap them inside the paranthesis.
@@ -43,35 +43,36 @@ console.log(addTwo(2,3));
 
 
 
-🔁 this in Regular Functions:
-In a regular function, this refers to the object that called the function — which can change depending on the calling context.
+// 🔁 this in Regular Functions:
+// In a regular function, this refers to the object that called the function — which can change depending on the calling context.
 
-js
-Copy
-Edit
-const user = {
-  username: "hitesh",
-  welcomeMessage: function () {
-    console.log(this.username); // 'this' refers to 'user' object
-  }
-};
+// js
+// Copy
+// Edit
+// const user = {
+//   username: "hitesh",
+//   welcomeMessage: function () {
+//     console.log(this.username); // 'this' refers to 'user' object
+//   }
+// };
 
-user.welcomeMessage(); // hitesh
+// user.welcomeMessage(); // hitesh
 
-const test = user.welcomeMessage;
-test(); // undefined (in strict mode) or window/global object (in non-strict mode)
-🔁 this in Arrow Functions:
-In an arrow function, this is lexically scoped — it does not have its own this. Instead, it inherits this from the surrounding scope at the time the function is defined.
+// const test = user.welcomeMessage;
+// test(); // undefined (in strict mode) or window/global object (in non-strict mode)
 
-js
-Copy
-Edit
-const user = {
-  username: "hitesh",
-  welcomeMessage: () => {
-    console.log(this.username); // 'this' does NOT refer to 'user'
-  }
-};
+// 🔁 this in Arrow Functions:
+// In an arrow function, this is lexically scoped — it does not have its own this. Instead, it inherits this from the surrounding scope at the time the function is defined.
+
+// js
+// Copy
+// Edit
+// const user = {
+//   username: "hitesh",
+//   welcomeMessage: () => {
+//     console.log(this.username); // 'this' does NOT refer to 'user'
+//   }
+// };
 
 //Difference between Regular function and Arrow function.
 // user.welcomeMessage(); // undefined
@@ -101,6 +102,7 @@ const user = {
 //     console.log(`${this.username}, welcome!`); // 'this' is not user
 //   }
 // };
+
 // ✅ Summary:
 // Feature	Regular Function	Arrow Function
 // Own this?	✅ Yes	❌ No (inherits from parent)
