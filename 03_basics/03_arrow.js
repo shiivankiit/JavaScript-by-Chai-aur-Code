@@ -21,16 +21,16 @@ user.welocmeMessage()
 // }
 
 //It is called function expression.
-// const chai= function(){
-//     let username="hitesh"
-//     console.log(this.username);
-// }
+const chai= function(){
+    let username="hitesh"
+    console.log(this.username);
+}
 
-// const chai=()=>{
-//     let username="hitesh"
-//     console.log(this.username);
-// }//It is called explicit return.
-//chai();
+const chai1=()=>{
+    let username="hitesh"
+    console.log(this.username);
+}//It is called explicit return.
+chai1();
 
 //const addTwo=(num1,num2)=> num1+num2
 //implict  does not contain return keyword called implicit return.
@@ -44,7 +44,8 @@ console.log(addTwo(2,3));
 
 
 // 🔁 this in Regular Functions:
-// In a regular function, this refers to the object that called the function — which can change depending on the calling context.
+// In a regular function, this refers to the object that called the function —
+//  which can change depending on the calling context.
 
 // js
 // Copy
@@ -62,7 +63,8 @@ console.log(addTwo(2,3));
 // test(); // undefined (in strict mode) or window/global object (in non-strict mode)
 
 // 🔁 this in Arrow Functions:
-// In an arrow function, this is lexically scoped — it does not have its own this. Instead, it inherits this from the surrounding scope at the time the function is defined.
+// In an arrow function, this is lexically scoped — it does not have its own this.
+//  Instead, it inherits this from the surrounding scope at the time the function is defined.
 
 // js
 // Copy
