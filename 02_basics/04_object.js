@@ -49,11 +49,11 @@ const user=  [
 }
 ]
 user[1].email;
-console.log(Object.keys(User));
-console.log(Object.values(User));
-console.log(Object.entries(User));
-console.log(User.hasOwnProperty('isLoggedIn'));
-console.log(User.hasOwnProperty('isLogged'));
+console.log(Object.keys(user));
+console.log(Object.values(user));
+console.log(Object.entries(user));
+console.log(user.hasOwnProperty('isLoggedIn'));
+console.log(user.hasOwnProperty('isLogged'));
 
 
 //Destructuring.
