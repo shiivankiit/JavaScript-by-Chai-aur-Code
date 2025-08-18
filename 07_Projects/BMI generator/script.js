@@ -1,4 +1,4 @@
-const form = document.querySelector('form')
+const form = document.querySelector('form')//we need to select the form bcz submit button is present inside the form.
 form.addEventListener('submit',function(e){
     e.preventDefault()
     const height=parseInt(document.querySelector('#height').value)
