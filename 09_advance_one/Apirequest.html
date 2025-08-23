@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    //First we create a object,XMLH is a methodn through
+    //which we send and accept the data.
+   const requesturl='https://api.github.com/users/shiivankiit';
+   const xhr=new XMLHttpRequest()//create a xml request olw way to call api in js
+   xhr.open('GET',requesturl)//this open method will send the data and prepare get request.
+   xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);//Logs the current state(0 to 4)
+    if(xhr.readyState === 4){
+       const data=JSON.parse(this.responseText)//It will cnvrt string into json format.
+       //When response come from url it comes into the form of string
+       console.log(data.followers); 
+       
+    }
+   }
+   //we need to call open method.
+   xhr.send();//it actually send the request.
+</script>
+</html>
+
+<!-- xhr.onreadystatechange = function(){ ... }
+This event handler runs every time the request state changes.
+xhr.readyState has values:
+0: UNSENT → request not initialized
+1: OPENED → open() called
+2: HEADERS_RECEIVED → response headers received
+3: LOADING → downloading response (partial data)
+4: DONE → request completed
+You’re logging the state each time to track progress. -->
