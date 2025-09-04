@@ -15,3 +15,10 @@ form.addEventListener('submit',function(e){
         result.innerHTML=`<span>${bmi}</span>`
     }
 });
+
+// What ${height} means
+// The syntax `${height}` is called template literal interpolation in JavaScript.
+// It allows you to embed the value of a variable inside a string.
+// Example:
+// let height = 170;
+// console.log(`The height is ${height}`);
