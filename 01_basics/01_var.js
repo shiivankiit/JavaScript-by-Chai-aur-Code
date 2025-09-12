@@ -9,3 +9,8 @@ console.table([accountId,accountEmail,accountpswd,accountcity]);
 Prefer no to use var 
 beacause of issues in block scope and functional scope. 
 */
+//let and const both are blocked scope.
+//account city creates a global variable.
+
+//undefined--a variable is declare but not assigned any value.
+//null--variable is explicitly define with null;
