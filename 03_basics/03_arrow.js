@@ -21,21 +21,21 @@ user.welocmeMessage()
 // }
 
 //It is called function expression.
-const chai= function(){
-    let username="hitesh"
-    console.log(this.username);
-}
+// const chai= function(){
+//     let username="hitesh"
+//     console.log(this.username);
+// }
 
-const chai1=()=>{
-    let username="hitesh"
-    console.log(this.username);
-}//It is called explicit return.
-chai1();
+// const chai1=()=>{
+//     let username="hitesh"
+//     console.log(this.username);
+// }//It is called explicit return.
+// chai1();
 
-//const addTwo=(num1,num2)=> num1+num2
-//implict  does not contain return keyword called implicit return.
-const addTwo=(num1,num2)=>({username:"hitesh"}) //when you put parantheses a block is created and we work on them.
-console.log(addTwo(2,3));
+// //const addTwo=(num1,num2)=> num1+num2
+// //implict  does not contain return keyword called implicit return.
+// const addTwo=(num1,num2)=>({username:"hitesh"}) //when you put parantheses a block is created and we work on them.
+// console.log(addTwo(2,3));
 
 //to return object we need to wrap them inside the paranthesis.
 

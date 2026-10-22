@@ -15,12 +15,13 @@ function name()
 //   console.log( num1+num2);
 // }
 
-function addTwoNumber(num1,num2)
+function addTwoNumber(num1,num2)//num1 and num2 are parameters.
 {
     let result=num1+num2
     return result;
 }
 const result = addTwoNumber(3,4);//while 3 and 4 are argument.
+//actual value passed to a function called arguments.
 //console.log("Result is ",result);
 
 function loginUser(username)
