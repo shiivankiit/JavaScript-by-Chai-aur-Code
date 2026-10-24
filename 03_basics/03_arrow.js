@@ -1,10 +1,11 @@
 const user={
       username:"hitesh",
       price:3999,
-
+      
+      //When you want to refer current contxt use this key-word.
       welocmeMessage : function(){
-     //   console.log(`${this.username},welcome to the website`);//this refer to current context.
-     //   console.log(this); 
+        console.log(`${this.username}welcome to the website`);//this refer to current context.
+        console.log(this); 
       }
 }
 //context refer to the value.
@@ -15,32 +16,43 @@ user.welocmeMessage()
 
 //console.log(this);//here we are inside node enviornment so this refer to the empty object.
 
-// function chai()
-// {
-//     console.log(this);
-// }
+function chai()
+{
+    let username="hitesh"
+    console.log(this.username);//This works inside object ...so why
+    //you are not abel to acess username here.
+}
+chai();
 
 //It is called function expression.
+
 // const chai= function(){
 //     let username="hitesh"
 //     console.log(this.username);
 // }
 
+//Arrow-function.
 // const chai1=()=>{
 //     let username="hitesh"
 //     console.log(this.username);
 // }//It is called explicit return.
 // chai1();
 
-// //const addTwo=(num1,num2)=> num1+num2
-// //implict  does not contain return keyword called implicit return.
-// const addTwo=(num1,num2)=>({username:"hitesh"}) //when you put parantheses a block is created and we work on them.
-// console.log(addTwo(2,3));
+//Explicit-return.
+
+// const addTwo=(num1,num2)=>{
+//       return num1 + num2
+// }
+
+//Implict  does not contain return keyword called implicit return.
+ 
+//const addTwo=(num1,num2)=> num1+num2
+
+//const addTwo=(num1,num2)=>({username:"hitesh"}) //To use object inside a fn we need to put it inside a block to execute them.
+// when you put parantheses a block is created and we work on them.
+//console.log(addTwo(2,3));
 
 //to return object we need to wrap them inside the paranthesis.
-
-
-
 
 
 // 🔁 this in Regular Functions:
